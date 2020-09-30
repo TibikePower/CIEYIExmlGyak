@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="orarend" type="orarendType"/>
+  <xs:complexType name="idopontType">
+    <xs:sequence>
+      <xs:element name="nap">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Hétfő"/>
+            <xs:enumeration value="Kedd"/>
+            <xs:enumeration value="Szerda"/>
+            <xs:enumeration value="Csütörtök"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="tol">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="8"/>
+            <xs:enumeration value="16"/>
+            <xs:enumeration value="13"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="ig">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="10"/>
+            <xs:enumeration value="18"/>
+            <xs:enumeration value="15"/>
+            <xs:enumeration value="19"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="oraType">
+    <xs:sequence>
+      <xs:element name="targy">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="XML"/>
+            <xs:enumeration value="Webtech"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="idopontType" name="idopont"/>
+      <xs:element name="helyszin">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Infó 101"/>
+            <xs:enumeration value="Infó 102"/>
+            <xs:enumeration value="Infó 103"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="oktato">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="B.L."/>
+            <xs:enumeration value="A.A."/>
+            <xs:enumeration value="S.P."/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="szak"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+    <xs:attribute type="xs:string" name="tipus" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="orarendType">
+    <xs:sequence>
+      <xs:element type="oraType" name="ora" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
