@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<nevjegykartyak>
+    <nevjegykartya>
+        <id>1</id>
+        <nev>Kaniel Outis</nev>
+        <ceg>
+            <cim>
+                <iranyitoszam>3500</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Nincs utca</utca>
+                <hazszam>12</hazszam>
+            </cim>
+            <nev>Kreativnév Zrt.</nev>
+            <telefonszam korzet="32">38361</telefonszam>
+            <weblap>https://www.kreativ.hu/</weblap>
+        </ceg>
+        <beosztas>Főnök</beosztas>
+        <telefonszam korzet="46">6427436</telefonszam>
+        <email>koutis@gmail.com</email>
+    </nevjegykartya>
+</nevjegykartyak>
