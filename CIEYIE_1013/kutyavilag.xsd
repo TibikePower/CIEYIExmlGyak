@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="konyv" type="konyvType"/>
+  <xs:complexType name="szereploType">
+    <xs:sequence>
+      <xs:element name="nev">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Snoopy"/>
+            <xs:enumeration value="Peppermint Patty"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="baratja" minOccurs="0"/>
+      <xs:element name="szuletett">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="1950-10-04"/>
+            <xs:enumeration value="1966-08-22"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="jellemzes">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="extrovertalt beagle"/>
+            <xs:enumeration value="kover, vakmero leanyz6"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="konyvType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="cim"/>
+      <xs:element type="xs:string" name="szerzo"/>
+      <xs:element type="szereploType" name="szereplo" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="isbn"/>
+  </xs:complexType>
+</xs:schema>
