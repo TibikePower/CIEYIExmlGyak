@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="szemelyek" type="szemelyekType"/>
+  <xs:complexType name="szemelyType">
+    <xs:sequence>
+      <xs:element name="nev">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Dora"/>
+            <xs:enumeration value="Kata"/>
+            <xs:enumeration value="Attila"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="kor" minOccurs="0"/>
+      <xs:element name="varos">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Budapest"/>
+            <xs:enumeration value="Miskolc"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="szemelyekType">
+    <xs:sequence>
+      <xs:element type="szemelyType" name="szemely" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
