@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+	<cim>XML előadás</cim>
+	<datum>2020-09-01</datum>
+	<helyszin>XXXVII. előadó</helyszin>
+	<eloado>
+		<nev>Egy Előadó</nev>
+		<adoszam>1234567</adoszam>
+		<lakcim>1111, Város, Utca utca 53.</lakcim>
+	</eloado>
+	<hallgatok>
+		<hallgato>
+			<nev>Egy Hallgató</nev>
+			<lakcim>1441, Város, Utca utca 13.</lakcim>
+		</hallgato>
+	</hallgatok>
+</konferencia>

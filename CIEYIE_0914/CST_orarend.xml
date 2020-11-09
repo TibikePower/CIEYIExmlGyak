@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<orarend>
+	<ora id="1" tipus="eloadas">
+		<targy>XML</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>8</tol>
+			<ig>10</ig>
+		</idopont>
+		<helyszin>Infó 101</helyszin>
+		<oktato>B.L.</oktato>
+		<szak>Progterv</szak>	
+	</ora>
+	<ora id="2" tipus="eloadas">
+		<targy>Webtech</targy>
+		<idopont>
+			<nap>Hétfő</nap>
+			<tol>16</tol>
+			<ig>18</ig>
+		</idopont>
+		<helyszin>Infó 102</helyszin>
+		<oktato>A.A.</oktato>
+		<szak>Progterv</szak>	
+	</ora>
+	<ora id="3" tipus="gyakorlat">
+		<targy>Webtech</targy>
+		<idopont>
+			<nap>Kedd</nap>
+			<tol>13</tol>
+			<ig>15</ig>
+		</idopont>
+		<helyszin>Infó 102</helyszin>
+		<oktato>A.A.</oktato>
+		<szak>Progterv</szak>	
+	</ora>
+	<ora id="4" tipus="gyakorlat">
+		<targy>XML</targy>
+		<idopont>
+			<nap>Szerda</nap>
+			<tol>16</tol>
+			<ig>18</ig>
+		</idopont>
+		<helyszin>Infó 102</helyszin>
+		<oktato>B.L.</oktato>
+		<szak>Progterv</szak>	
+	</ora>
+	<ora id="5" tipus="eloadas">
+		<targy>XML</targy>
+		<idopont>
+			<nap>Csütörtök</nap>
+			<tol>16</tol>
+			<ig>19</ig>
+		</idopont>
+		<helyszin>Infó 103</helyszin>
+		<oktato>S.P.</oktato>
+		<szak>Progterv</szak>	
+	</ora>
+</orarend>
