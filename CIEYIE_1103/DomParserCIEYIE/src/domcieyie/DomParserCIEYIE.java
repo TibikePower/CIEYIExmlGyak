@@ -38,6 +38,13 @@ public class DomParserCIEYIE {
 				
 			}
 			
+			expr = xpath.compile("//student[price<8]/title/text()");
+			result = expr.evaluate(doc, XPathConstants.NODESET);
+			nodes = (NodeList) result;
+			for (int i = 0; i < nodes.getLength(); i++) {
+				System.out.println(nodes.item(i).getNodeValue());
+			}
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
