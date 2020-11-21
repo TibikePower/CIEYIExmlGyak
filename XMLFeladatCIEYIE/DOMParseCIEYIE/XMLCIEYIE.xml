@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nyilvantartas xmlns="beadando" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="beadando XMLSchemeCIEYIE.xsd">
+    <vevok>
+        <vevo vevoid="0">
+            <nev>Teszt Elek</nev>
+            <email>t.elek@gmail.com</email>
+            <telefonszam>06666666666</telefonszam>
+        </vevo>
+        <vevo vevoid="1">
+            <nev>Totál Levente</nev>
+            <email>t.levente@gmail.com</email>
+            <telefonszam>06663666666</telefonszam>
+        </vevo>
+        <vevo vevoid="2">
+            <nev>Lopós Lajos</nev>
+            <email>l.lajcsi@gmail.com</email>
+            <telefonszam>06661666666</telefonszam>
+        </vevo>
+        <vevo vevoid="3">
+            <nev>Oltatlan Péter</nev>
+            <email>o.petya@gmail.com</email>
+            <telefonszam>06635666666</telefonszam>
+        </vevo>
+    </vevok>
+    <hamburgerek>
+        <hamburger hamid="0" hid="0">
+            <nev>Legjobb Hamburger</nev>
+            <ar>123456789</ar>
+            <meret>Óriási</meret>
+        </hamburger>
+        <hamburger hamid="1" hid="0">
+            <nev>Olcsóburger</nev>
+            <ar>12</ar>
+            <meret>Kicsi</meret>
+        </hamburger>
+        <hamburger hamid="2" hid="1">
+            <nev>Finomburi</nev>
+            <ar>1200</ar>
+            <meret>Nagy</meret>
+        </hamburger>
+        <hamburger hamid="3" hid="2">
+            <nev>Kreatívburger</nev>
+            <ar>1100</ar>
+            <meret>Kicsi</meret>
+        </hamburger>
+        <hamburger hamid="4" hid="3">
+            <nev>Viktorburger</nev>
+            <ar>50</ar>
+            <meret>Kicsi</meret>
+        </hamburger>
+        <hamburger hamid="5" hid="3">
+            <nev>Macsóburger</nev>
+            <ar>5000</ar>
+            <meret>Óriási</meret>
+        </hamburger>
+    </hamburgerek>
+    <hamburgerezok>
+        <hamburgerezo hid="0">
+            <nev>UTRYZÓ</nev>
+            <telefonszam>06666666667</telefonszam>
+            <cim>
+                <varos>Miskolc</varos>
+                <utca>Teszt út</utca>
+                <hsz>43</hsz>
+            </cim>
+        </hamburgerezo>
+        <hamburgerezo hid="1">
+            <nev>DERIVÁLÓ HAMBIZÓ</nev>
+            <telefonszam>06666666660</telefonszam>
+            <cim>
+                <varos>Budapest</varos>
+                <utca>Tesztelők útja</utca>
+                <hsz>41</hsz>
+            </cim>
+        </hamburgerezo>
+        <hamburgerezo hid="2">
+            <nev>FALD FEL EDELÉNYT</nev>
+            <telefonszam>06666626660</telefonszam>
+            <cim>
+                <varos>Edelény</varos>
+                <utca>Tesla utca</utca>
+                <hsz>1</hsz>
+            </cim>
+        </hamburgerezo>
+		<hamburgerezo hid="3">
+			<nev>MÁTÉKASOHANEMJÖNSEHOVA BURGEREZŐ</nev>
+			<telefonszam>06646626660</telefonszam>
+			<cim>
+				<varos>Edelény</varos>
+				<utca>Tél út</utca>
+				<hsz>4</hsz>
+			</cim>
+		</hamburgerezo>
+    </hamburgerezok>
+    <futarok>
+        <futar futid="0" hid="0">
+            <nev>Téglás Máté</nev>
+            <telefonszam>06666666661</telefonszam>
+            <fizetes>940000</fizetes>
+        </futar>
+        <futar futid="1" hid="1">
+            <nev>Oláh Renátó</nev>
+            <telefonszam>06266666661</telefonszam>
+            <fizetes>40000</fizetes>
+        </futar>
+        <futar futid="2" hid="2">
+            <nev>Bubenkó Zsolt</nev>
+            <telefonszam>06266663661</telefonszam>
+            <fizetes>140000</fizetes>
+        </futar>
+        <futar futid="3" hid="3">
+            <nev>Lakatos Trump</nev>
+            <telefonszam>06269663661</telefonszam>
+            <fizetes>1400000</fizetes>
+        </futar>
+    </futarok>
+    <rendelesek>
+        <rendeles vevoid="0" hamid="0">
+            <datum>2019</datum>
+        </rendeles>
+        <rendeles vevoid="0" hamid="1">
+            <datum>2020</datum>
+        </rendeles>
+        <rendeles vevoid="1" hamid="3">
+            <datum>2013</datum>
+        </rendeles>
+        <rendeles vevoid="1" hamid="5">
+            <datum>2014</datum>
+        </rendeles>
+        <rendeles vevoid="1" hamid="1">
+            <datum>2015</datum>
+        </rendeles>
+        <rendeles vevoid="2" hamid="3">
+            <datum>2019</datum>
+        </rendeles>
+        <rendeles vevoid="3" hamid="2">
+            <datum>2020</datum>
+        </rendeles>
+        <rendeles vevoid="3" hamid="1">
+            <datum>2013</datum>
+        </rendeles>
+    </rendelesek>
+</nyilvantartas>

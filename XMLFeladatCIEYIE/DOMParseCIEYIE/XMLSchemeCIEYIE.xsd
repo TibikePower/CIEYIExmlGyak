@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="beadando" xmlns="beadando" elementFormDefault="qualified">
+    <xs:element name="nyilvantartas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="vevok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded"
+                                        name="vevo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev"
+                                                    type="xs:string" />
+                                        <xs:element name="email"
+                                                    type="xs:string" />
+                                        <xs:element name="telefonszam"
+                                                    type="xs:unsignedLong" />
+                                    </xs:sequence>
+                                    <xs:attribute name="vevoid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="hamburgerek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded"
+                                        name="hamburger">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev"
+                                                    type="xs:string" />
+                                        <xs:element name="ar"
+                                                    type="xs:unsignedInt" />
+                                        <xs:element name="meret"
+                                                    type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="hamid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                    <xs:attribute name="hid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="hamburgerezok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded"
+                                        name="hamburgerezo">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev"
+                                                    type="xs:string" />
+                                        <xs:element name="telefonszam"
+                                                    type="xs:unsignedLong" />
+                                        <xs:element name="cim">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="varos"
+                                                                type="xs:string" />
+                                                    <xs:element name="utca"
+                                                                type="xs:string" />
+                                                    <xs:element name="hsz"
+                                                                type="xs:unsignedByte" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="hid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="futarok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded"
+                                        name="futar">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nev"
+                                                    type="xs:string" />
+                                        <xs:element name="telefonszam"
+                                                    type="xs:unsignedLong" />
+                                        <xs:element name="fizetes"
+                                                    type="xs:unsignedInt" />
+                                    </xs:sequence>
+                                    <xs:attribute name="futid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                    <xs:attribute name="hid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="rendelesek">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded"
+                                        name="rendeles">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="datum"
+                                                    type="xs:unsignedShort" />
+                                    </xs:sequence>
+                                    <xs:attribute name="vevoid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                    <xs:attribute name="hamid"
+                                                  type="xs:unsignedByte"
+                                                  use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
