@@ -6,15 +6,23 @@ import java.io.IOException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.Transformer;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMSource;
+import javax.xml.transform.stream.StreamResult;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+
 import org.xml.sax.SAXException;
 
+
+
 public class DOMModifyCIEYIE {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws TransformerException {
 		try{
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
@@ -30,7 +38,7 @@ public class DOMModifyCIEYIE {
 	               Element eElement = (Element) node;
 	               System.out.println("Név : " + eElement.getElementsByTagName("nev").item(0).getTextContent());
 	               if(eElement.getElementsByTagName("nev").item(0).getTextContent().equals("Téglás Máté")) {
-	            	   eElement.getElementsByTagName("nev").item(0).setTextContent("Répás Réka");
+	            	   eElement.getElementsByTagName("nev").item(0).setTextContent("Rókás Réka");
 	            	   System.out.println("-->Új név : " + eElement.getElementsByTagName("nev").item(0).getTextContent());
 	               }
 	               if(eElement.getElementsByTagName("nev").item(0).getTextContent().equals("Bubenkó Zsolt")) {
@@ -83,7 +91,13 @@ public class DOMModifyCIEYIE {
 					}
 					System.out.println();
 				}
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+	        Transformer transformer = transformerFactory.newTransformer();
+	        DOMSource source = new DOMSource(doc);
+	        StreamResult result = new StreamResult(new File("XMLCIEYIE.updated.xml"));
+	        transformer.transform(source, result);		
 			}
+			
 			
 		}catch(ParserConfigurationException e){ //Hibakezelõk
 			e.printStackTrace();
