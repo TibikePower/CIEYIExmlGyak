@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script>
+function jsonBeolvas() {
+	var arr={
+	  "book": {
+		"element": [
+		  {
+			"author": "Nyékyné Dr. Gaizler Judit",
+			"language": "Java 2 I-II. - Útikalauz programozóknak 5.0"
+		  },
+		  {
+			"author": "Kovács László",
+			"language": "Adatkezelés XML környezetbe"
+		  }
+		]
+	  }
+	};
+	JSON.stringify(arr);
+	console.log(arr);
+}
+</script>
+</head>
+<body>
+<button type="button" onclick="jsonBeolvas()">JSON</button>
+<h1>JSON megvalósítása - JavaScript</h1>
+
+<ul id="lista">
+</ul>
+
+</body>
+
+</html>
